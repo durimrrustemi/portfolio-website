@@ -1,5 +1,7 @@
 'use client'
 
+import Image from 'next/image'
+
 export default function Hero() {
   const techStack = [
     { name: '.NET', logo: '/icons/dotnet.svg' },
@@ -70,9 +72,11 @@ export default function Hero() {
                     }}
                   >
                     <div className="w-12 h-12 flex items-center justify-center group-hover:scale-110 transition-transform">
-                      <img 
+                      <Image 
                         src={tech.logo} 
                         alt={tech.name}
+                        width={48}
+                        height={48}
                         className="w-full h-full object-contain transition-all duration-300"
                         style={{
                           filter: 'brightness(0) saturate(100%) invert(26%) sepia(89%) saturate(1583%) hue-rotate(240deg) brightness(97%) contrast(105%)',

@@ -1,6 +1,7 @@
 'use client'
 
 import Link from 'next/link'
+import Image from 'next/image'
 import { useState } from 'react'
 import ThemeToggle from './ThemeToggle'
 
@@ -15,9 +16,11 @@ export default function Header() {
           {/* Logo */}
           <div className="flex-1">
             <a href="#home" className="flex items-center group w-fit">
-            <img 
+            <Image 
               src="/icons/dr.svg" 
               alt="DR Logo" 
+              width={40}
+              height={40}
               className="h-10 w-auto transition-all duration-300"
               style={{
                 filter: 'brightness(0) saturate(100%) invert(26%) sepia(89%) saturate(1583%) hue-rotate(240deg) brightness(97%) contrast(105%)',

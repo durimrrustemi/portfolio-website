@@ -74,7 +74,7 @@ export default function Contact() {
             <h2 className="text-heading dark:text-heading-dark font-bold text-4xl lg:text-6xl leading-tight">Contact Me</h2>
           </div>
           <p className="text-body dark:text-body-dark text-lg lg:text-2xl max-w-4xl">
-            Interested in working together? Let's discuss your project and how I can help.
+            Interested in working together? Let&apos;s discuss your project and how I can help.
           </p>
         </div>
 

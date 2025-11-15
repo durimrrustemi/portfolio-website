@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 export default function About() {
   return (
     <section id="about" className="py-20 lg:py-32 dark:bg-body">
@@ -9,9 +11,11 @@ export default function About() {
           {/* Left Image */}
           <div className="w-full lg:flex-1 lg:max-w-xl">
             <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
-              <img 
+              <Image 
                 src="/durim-rrustemi.png" 
                 alt="Durim Rrustemi - Full-Stack Software Engineer"
+                width={800}
+                height={800}
                 className="w-full h-auto"
                 style={{ transform: 'scale(1.05)', transformOrigin: 'center' }}
               />

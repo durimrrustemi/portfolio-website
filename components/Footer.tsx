@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 
 export default function Footer() {
   return (
@@ -7,9 +8,11 @@ export default function Footer() {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-10 lg:gap-12">
           {/* Logo */}
           <div className="flex items-center">
-            <img 
+            <Image 
               src="/icons/dr.svg" 
               alt="DR Logo" 
+              width={40}
+              height={40}
               className="h-10 w-auto"
             />
           </div>
