@@ -65,11 +65,11 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-20 lg:py-32 dark:bg-body">
+    <section id="contact" className="py-5 lg:py-32 dark:bg-body scroll-mt-header">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Section Title */}
-        <div className="flex flex-col items-center text-center gap-8 mb-16">
-          <div className="flex flex-col gap-5">
+        <div className="flex flex-col items-center text-center gap-4 lg:gap-8 mb-8 lg:mb-16">
+          <div className="flex flex-col gap-3 lg:gap-5">
             <p className="text-heading dark:text-heading-dark font-semibold text-xl lg:text-2xl">Get In Touch</p>
             <h2 className="text-heading dark:text-heading-dark font-bold text-4xl lg:text-6xl leading-tight">Contact Me</h2>
           </div>
@@ -80,11 +80,11 @@ export default function Contact() {
 
         {/* Contact Form */}
         <div className="max-w-4xl mx-auto">
-          <form onSubmit={handleSubmit} className="flex flex-col gap-8">
+          <form onSubmit={handleSubmit} className="flex flex-col gap-3 lg:gap-8">
             {/* First Name & Last Name */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="flex flex-col gap-3">
-                <label htmlFor="firstName" className="text-body dark:text-heading-dark font-medium text-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-8">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="firstName" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
                   First Name
                 </label>
                 <input
@@ -94,12 +94,12 @@ export default function Contact() {
                   value={formData.firstName}
                   onChange={handleChange}
                   required
-                  className="px-6 py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
+                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
                   placeholder="Enter your first name"
                 />
               </div>
-              <div className="flex flex-col gap-3">
-                <label htmlFor="lastName" className="text-body dark:text-heading-dark font-medium text-lg">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="lastName" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
                   Last Name
                 </label>
                 <input
@@ -109,16 +109,16 @@ export default function Contact() {
                   value={formData.lastName}
                   onChange={handleChange}
                   required
-                  className="px-6 py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
+                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
                   placeholder="Enter your last name"
                 />
               </div>
             </div>
 
             {/* Email & Phone */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              <div className="flex flex-col gap-3">
-                <label htmlFor="email" className="text-body dark:text-heading-dark font-medium text-lg">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-8">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="email" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
                   Email
                 </label>
                 <input
@@ -128,12 +128,12 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="px-6 py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
+                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
                   placeholder="Enter your email"
                 />
               </div>
-              <div className="flex flex-col gap-3">
-                <label htmlFor="phone" className="text-body dark:text-heading-dark font-medium text-lg">
+              <div className="flex flex-col gap-2">
+                <label htmlFor="phone" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
                   Phone Number
                 </label>
                 <input
@@ -142,15 +142,15 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="px-6 py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
+                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
                   placeholder="Enter your phone number"
                 />
               </div>
             </div>
 
             {/* Topic */}
-            <div className="flex flex-col gap-3">
-              <label htmlFor="topic" className="text-body dark:text-heading-dark font-medium text-lg">
+            <div className="flex flex-col gap-2">
+              <label htmlFor="topic" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
                 Choose a topic
               </label>
               <div className="relative">
@@ -160,7 +160,7 @@ export default function Contact() {
                   value={formData.topic}
                   onChange={handleChange}
                   required
-                  className="w-full px-6 py-4 pr-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark appearance-none cursor-pointer"
+                  className="w-full px-4 py-2.5 lg:px-6 lg:py-4 pr-10 lg:pr-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark appearance-none cursor-pointer"
                 >
                   <option value="">Select one...</option>
                   <option value="backend-development">Backend Development</option>
@@ -169,8 +169,8 @@ export default function Contact() {
                   <option value="architecture-consulting">Architecture & Consulting</option>
                   <option value="other">Other</option>
                 </select>
-                <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none">
-                  <svg className="w-5 h-5 text-body dark:text-heading-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="absolute right-4 lg:right-6 top-1/2 -translate-y-1/2 pointer-events-none">
+                  <svg className="w-4 h-4 lg:w-5 lg:h-5 text-body dark:text-heading-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </div>
@@ -178,8 +178,8 @@ export default function Contact() {
             </div>
 
             {/* Message */}
-            <div className="flex flex-col gap-3">
-              <label htmlFor="message" className="text-body dark:text-heading-dark font-medium text-lg">
+            <div className="flex flex-col gap-2">
+              <label htmlFor="message" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
                 Message
               </label>
               <textarea
@@ -188,14 +188,14 @@ export default function Contact() {
                 value={formData.message}
                 onChange={handleChange}
                 required
-                rows={6}
-                className="px-6 py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-lg resize-none bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
+                rows={4}
+                className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg resize-none bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
                 placeholder="Type your message..."
               />
             </div>
 
             {/* Terms Checkbox */}
-            <div className="flex items-start gap-3">
+            <div className="flex items-start gap-2">
               <input
                 type="checkbox"
                 id="terms"
@@ -203,31 +203,31 @@ export default function Contact() {
                 checked={formData.terms}
                 onChange={handleChange}
                 required
-                className="mt-1 w-5 h-5 accent-primary border-gray-300 rounded focus:ring-primary cursor-pointer"
+                className="mt-1 w-4 h-4 lg:w-5 lg:h-5 accent-primary border-gray-300 rounded focus:ring-primary cursor-pointer"
               />
-              <label htmlFor="terms" className="text-body dark:text-body-dark text-base leading-relaxed cursor-pointer">
+              <label htmlFor="terms" className="text-body dark:text-body-dark text-sm lg:text-base leading-relaxed cursor-pointer">
                 I accept the terms and conditions
               </label>
             </div>
 
             {/* Submit Button */}
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-3">
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full md:w-auto px-12 py-4 bg-primary text-white font-semibold text-lg rounded-lg hover:bg-accent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full md:w-auto px-8 py-3 lg:px-12 lg:py-4 bg-primary text-white font-semibold text-base lg:text-lg rounded-lg hover:bg-accent transition-all disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {isSubmitting ? 'Sending...' : 'Submit'}
               </button>
               
               {/* Success/Error Messages */}
               {submitStatus === 'success' && (
-                <div className="text-primary font-medium text-lg">
+                <div className="text-primary font-medium text-base lg:text-lg">
                   ✓ Thank you! Your message has been sent successfully.
                 </div>
               )}
               {submitStatus === 'error' && (
-                <div className="text-accent font-medium text-lg">
+                <div className="text-accent font-medium text-base lg:text-lg">
                   ✗ Oops! Something went wrong. Please try again or email me directly at durimrrustemi@gmail.com
                 </div>
               )}

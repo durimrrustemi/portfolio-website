@@ -57,20 +57,20 @@ export default function Experience() {
   ]
 
   return (
-    <section id="experience" className="py-20 lg:py-32 bg-bg-shade dark:bg-bg-shade-dark">
+    <section id="experience" className="py-5 lg:py-32 bg-bg-shade dark:bg-bg-shade-dark scroll-mt-header">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Professional Experience */}
-        <div className="mb-20 lg:mb-32">
-          <div className="flex flex-col gap-5 mb-12 lg:mb-16">
+        <div className="mb-12 lg:mb-32">
+          <div className="flex flex-col gap-3 lg:gap-5 mb-8 lg:mb-16">
             <p className="text-heading dark:text-heading-dark font-semibold text-xl lg:text-2xl">Career</p>
             <h2 className="text-heading dark:text-heading-dark font-bold text-4xl lg:text-6xl leading-tight">
               Professional Experience
             </h2>
           </div>
 
-          <div className="space-y-8 lg:space-y-10">
+          <div className="space-y-4 lg:space-y-10">
             {experiences.map((exp, index) => (
-              <div key={index} className="bg-white dark:bg-body p-6 lg:p-8 rounded-lg border-l-4 border-primary hover:shadow-lg transition-shadow">
+              <div key={index} className="bg-white dark:bg-body p-5 lg:p-8 rounded-lg border-l-4 border-primary hover:shadow-lg transition-shadow">
                 <div className="flex flex-col gap-4">
                   <div>
                     <h3 className="text-heading dark:text-heading-dark font-bold text-2xl lg:text-3xl mb-2">
@@ -96,21 +96,21 @@ export default function Experience() {
         </div>
 
         {/* Education & Languages */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-20">
           {/* Education */}
           <div>
-            <div className="flex flex-col gap-5 mb-8 lg:mb-12">
+            <div className="flex flex-col gap-3 lg:gap-5 mb-6 lg:mb-12">
               <p className="text-heading dark:text-heading-dark font-semibold text-xl lg:text-2xl">Education</p>
               <h2 className="text-heading dark:text-heading-dark font-bold text-3xl lg:text-5xl leading-tight">
                 Academic Background
               </h2>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 lg:space-y-6">
               {education.map((edu, index) => (
                 <div
                   key={index}
-                  className="p-6 bg-white dark:bg-body rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow"
+                  className="p-4 lg:p-6 bg-white dark:bg-body rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow"
                 >
                   <h3 className="text-heading dark:text-heading-dark font-bold text-xl lg:text-2xl mb-2">
                     {edu.degree}
@@ -126,23 +126,32 @@ export default function Experience() {
 
           {/* Languages */}
           <div>
-            <div className="flex flex-col gap-5 mb-8 lg:mb-12">
+            <div className="flex flex-col gap-3 lg:gap-5 mb-6 lg:mb-12">
               <p className="text-heading dark:text-heading-dark font-semibold text-xl lg:text-2xl">Languages</p>
               <h2 className="text-heading dark:text-heading-dark font-bold text-3xl lg:text-5xl leading-tight">
                 Language Skills
               </h2>
             </div>
 
-            <div className="space-y-6">
+            <div className="space-y-4 lg:space-y-6">
               {languages.map((lang, index) => (
                 <div
                   key={index}
-                  className="p-6 bg-white dark:bg-body rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow"
+                  className="p-4 lg:p-6 bg-white dark:bg-body rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow"
                 >
-                  <h3 className="text-heading dark:text-heading-dark font-bold text-xl lg:text-2xl mb-2">
-                    {lang.language}
-                  </h3>
-                  <p className="text-body dark:text-body-dark text-lg">{lang.proficiency}</p>
+                  <div className="flex flex-wrap items-center gap-2 lg:flex-col lg:items-start">
+                    <h3 className="text-heading dark:text-heading-dark font-bold text-lg lg:text-2xl">
+                      {lang.language}
+                    </h3>
+                    {['German', 'English'].includes(lang.language) ? (
+                      <p className="text-body dark:text-body-dark text-base lg:text-lg">
+                        <span className="lg:hidden">Fluent</span>
+                        <span className="hidden lg:inline">{lang.proficiency}</span>
+                      </p>
+                    ) : (
+                      <p className="text-body dark:text-body-dark text-base lg:text-lg">{lang.proficiency}</p>
+                    )}
+                  </div>
                 </div>
               ))}
             </div>

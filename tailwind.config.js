@@ -26,6 +26,9 @@ module.exports = {
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
       },
+      scrollMargin: {
+        header: 'var(--header-offset)',
+      },
     },
   },
   plugins: [],

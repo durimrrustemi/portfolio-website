@@ -14,7 +14,7 @@ export default function Hero() {
   ]
 
   return (
-    <section id="home" className="bg-bg-shade dark:bg-body pt-32 lg:pt-40 pb-20 lg:pb-32">
+    <section id="home" className="bg-bg-shade dark:bg-body pt-24 lg:pt-40 pb-5 lg:pb-32 scroll-mt-header">
       <div className="container mx-auto px-6 lg:px-20">
         <div className="max-w-5xl mx-auto">
           {/* Main Content - Centered */}
@@ -27,8 +27,7 @@ export default function Hero() {
                 Full-Stack Software Engineer
               </h1>
               <p className="text-body dark:text-body-dark text-lg lg:text-2xl leading-relaxed max-w-3xl mx-auto">
-                7+ years of experience building scalable back-end systems, secure APIs, and cloud-native applications. 
-                Proven track record in financial services and international projects.
+                7+ years of experience building scalable back-end systems and cloud-native applications. I help businesses turn complex problems into high-performance software solutions.
               </p>
             </div>
 
@@ -49,15 +48,15 @@ export default function Hero() {
             </div>
 
             {/* Tech Stack */}
-            <div className="w-full mt-12 pt-12 border-t border-heading/10 dark:border-heading-dark/10">
-              <p className="text-heading/70 dark:text-heading-dark/70 font-medium text-sm lg:text-base mb-6 uppercase tracking-wider">
+            <div className="w-full mt-8 pt-8 lg:mt-12 lg:pt-12 border-t border-heading/10 dark:border-heading-dark/10">
+              <p className="text-heading/70 dark:text-heading-dark/70 font-medium text-sm lg:text-base mb-4 lg:mb-6 uppercase tracking-wider">
                 Tech Stack
               </p>
-              <div className="flex flex-wrap items-center justify-center gap-4 lg:gap-6">
+              <div className="flex flex-wrap items-center justify-center gap-3 lg:gap-6">
                 {techStack.map((tech, index) => (
                   <div
                     key={index}
-                    className="relative group p-5 bg-white dark:bg-bg-shade-dark rounded-xl shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-transparent hover:border-accent/30 cursor-pointer"
+                    className="relative group p-3 lg:p-5 bg-white dark:bg-bg-shade-dark rounded-xl shadow-sm hover:shadow-lg transition-all hover:-translate-y-1 border border-transparent hover:border-accent/30 cursor-pointer"
                     onMouseEnter={(e) => {
                       const img = e.currentTarget.querySelector('img')
                       if (img) {
@@ -71,7 +70,7 @@ export default function Hero() {
                       }
                     }}
                   >
-                    <div className="w-12 h-12 flex items-center justify-center group-hover:scale-110 transition-transform">
+                    <div className="w-10 h-10 lg:w-12 lg:h-12 flex items-center justify-center group-hover:scale-110 transition-transform">
                       <Image 
                         src={tech.logo} 
                         alt={tech.name}

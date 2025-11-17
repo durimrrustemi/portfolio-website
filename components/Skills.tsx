@@ -63,10 +63,10 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-20 lg:py-32 dark:bg-bg-shade-dark">
+    <section id="skills" className="py-5 lg:py-32 dark:bg-bg-shade-dark scroll-mt-header">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Section Title */}
-        <div className="flex flex-col gap-5 mb-16 lg:mb-28">
+        <div className="flex flex-col gap-3 lg:gap-5 mb-8 lg:mb-16">
           <p className="text-heading dark:text-heading-dark font-semibold text-xl lg:text-2xl">My Skills</p>
           <h2 className="text-heading dark:text-heading-dark font-bold text-4xl lg:text-6xl leading-tight">
             What I Do
@@ -74,26 +74,27 @@ export default function Skills() {
         </div>
 
         {/* Skills Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 lg:gap-8">
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col gap-8 p-8 bg-bg-shade dark:bg-body border-b-4 border-primary rounded-xl hover:shadow-lg transition-shadow"
+              className="flex flex-col gap-4 lg:gap-8 p-5 lg:p-8 bg-bg-shade dark:bg-body border-b-4 border-primary rounded-xl hover:shadow-lg transition-shadow"
             >
-              {/* Icon */}
-              <div className="w-20 h-20 bg-white dark:bg-bg-shade-dark rounded-xl shadow-md flex items-center justify-center">
-                {skill.icon}
-              </div>
-
-              {/* Content */}
-              <div className="flex flex-col gap-6">
+              <div className="flex items-center gap-4 md:flex-col md:items-start">
+                {/* Icon */}
+                <div className="w-14 h-14 lg:w-20 lg:h-20 bg-white dark:bg-bg-shade-dark rounded-xl shadow-md flex items-center justify-center">
+                  {skill.icon}
+                </div>
+                {/* Title */}
                 <h3 className="text-heading dark:text-heading-dark font-bold text-2xl lg:text-3xl leading-tight">
                   {skill.title}
                 </h3>
-                <p className="text-body dark:text-body-dark text-lg lg:text-xl leading-relaxed">
-                  {skill.description}
-                </p>
               </div>
+
+              {/* Description */}
+              <p className="text-body dark:text-body-dark text-lg lg:text-xl leading-relaxed">
+                {skill.description}
+              </p>
             </div>
           ))}
         </div>
