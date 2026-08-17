@@ -3,14 +3,14 @@ import Image from 'next/image'
 
 export default function Footer() {
   return (
-    <footer className="bg-bg-shade dark:bg-bg-shade-dark py-8 lg:py-16">
+    <footer className="bg-bg-shade py-8 lg:py-16">
       <div className="container mx-auto px-6 lg:px-20">
         <div className="flex flex-col lg:flex-row justify-between items-center gap-6 lg:gap-12">
           {/* Logo */}
           <div className="flex items-center">
-            <Image 
-              src="/icons/dr.svg" 
-              alt="DR Logo" 
+            <Image
+              src="/icons/dr.svg"
+              alt="DR Logo"
               width={40}
               height={40}
               className="h-10 w-auto"
@@ -19,19 +19,19 @@ export default function Footer() {
 
           {/* Navigation Links */}
           <nav className="flex flex-wrap justify-center items-center gap-4 lg:gap-12 text-base lg:text-lg">
-            <Link href="#home" className="text-body dark:text-heading-dark hover:text-primary dark:hover:text-primary transition-colors font-medium">
+            <Link href="#home" className="text-body hover:text-primary transition-colors font-medium">
               Home
             </Link>
-            <Link href="#skills" className="text-body dark:text-heading-dark hover:text-primary dark:hover:text-primary transition-colors font-medium">
+            <Link href="#skills" className="text-body hover:text-primary transition-colors font-medium">
               Skills
             </Link>
-            <Link href="#about" className="text-body dark:text-heading-dark hover:text-primary dark:hover:text-primary transition-colors font-medium">
+            <Link href="#about" className="text-body hover:text-primary transition-colors font-medium">
               About Me
             </Link>
-            <Link href="#experience" className="text-body dark:text-heading-dark hover:text-primary dark:hover:text-primary transition-colors font-medium">
+            <Link href="#experience" className="text-body hover:text-primary transition-colors font-medium">
               Experience
             </Link>
-            <Link href="#contact" className="text-body dark:text-heading-dark hover:text-primary dark:hover:text-primary transition-colors font-medium">
+            <Link href="#contact" className="text-body hover:text-primary transition-colors font-medium">
               Contact
             </Link>
           </nav>
@@ -40,7 +40,7 @@ export default function Footer() {
           <div className="flex items-center gap-3 lg:gap-4">
             <a
               href="mailto:durimrrustemi@gmail.com"
-              className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center text-body dark:text-heading-dark hover:text-accent dark:hover:text-accent transition-colors"
+              className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center text-body hover:text-accent transition-colors"
               aria-label="Email"
             >
               <svg className="w-5 h-5 lg:w-6 lg:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -56,7 +56,7 @@ export default function Footer() {
               href="https://linkedin.com/in/durimrrustemi"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center text-body dark:text-heading-dark hover:text-accent dark:hover:text-accent transition-colors"
+              className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center text-body hover:text-accent transition-colors"
               aria-label="LinkedIn"
             >
               <svg className="w-5 h-5 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -67,7 +67,7 @@ export default function Footer() {
               href="https://github.com/durimrrustemi"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center text-body dark:text-heading-dark hover:text-accent dark:hover:text-accent transition-colors"
+              className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center text-body hover:text-accent transition-colors"
               aria-label="GitHub"
             >
               <svg className="w-5 h-5 lg:w-6 lg:h-6" fill="currentColor" viewBox="0 0 24 24">
@@ -76,7 +76,7 @@ export default function Footer() {
             </a>
             <a
               href="tel:+38349894870"
-              className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center text-body dark:text-heading-dark hover:text-accent dark:hover:text-accent transition-colors"
+              className="w-9 h-9 lg:w-10 lg:h-10 flex items-center justify-center text-body hover:text-accent transition-colors"
               aria-label="Phone"
             >
               <svg className="w-5 h-5 lg:w-6 lg:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -92,16 +92,16 @@ export default function Footer() {
         </div>
 
         {/* Divider */}
-        <div className="border-t border-heading/10 dark:border-heading-dark/10 my-6 lg:my-10"></div>
+        <div className="border-t border-heading/10 my-6 lg:my-10"></div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col md:flex-row justify-between items-center gap-4 lg:gap-6 text-body/70 dark:text-body-dark/70 text-sm lg:text-base">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-4 lg:gap-6 text-body/70 text-sm lg:text-base">
           <p>© 2025 Durim Rrustemi. All rights reserved.</p>
           <div className="flex flex-col md:flex-row items-center gap-2 md:gap-8">
-            <a href="mailto:durimrrustemi@gmail.com" className="hover:text-primary dark:hover:text-primary transition-colors">
+            <a href="mailto:durimrrustemi@gmail.com" className="hover:text-primary transition-colors">
               durimrrustemi@gmail.com
             </a>
-            <a href="tel:+38349894870" className="hover:text-primary dark:hover:text-primary transition-colors">
+            <a href="tel:+38349894870" className="hover:text-primary transition-colors">
               +383 49 894 870
             </a>
           </div>
@@ -110,4 +110,3 @@ export default function Footer() {
     </footer>
   )
 }
-

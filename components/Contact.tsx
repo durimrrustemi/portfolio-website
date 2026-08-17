@@ -65,15 +65,15 @@ export default function Contact() {
   }
 
   return (
-    <section id="contact" className="py-5 lg:py-32 dark:bg-body scroll-mt-header">
+    <section id="contact" className="py-5 lg:py-32 scroll-mt-header">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Section Title */}
         <div className="flex flex-col items-center text-center gap-4 lg:gap-8 mb-8 lg:mb-16">
           <div className="flex flex-col gap-3 lg:gap-5">
-            <p className="text-heading dark:text-heading-dark font-semibold text-xl lg:text-2xl">Get In Touch</p>
-            <h2 className="text-heading dark:text-heading-dark font-bold text-4xl lg:text-6xl leading-tight">Contact Me</h2>
+            <p className="text-heading font-semibold text-xl lg:text-2xl">Get In Touch</p>
+            <h2 className="text-heading font-bold text-4xl lg:text-6xl leading-tight">Contact Me</h2>
           </div>
-          <p className="text-body dark:text-body-dark text-lg lg:text-2xl max-w-4xl">
+          <p className="text-body text-lg lg:text-2xl max-w-4xl">
             Interested in working together? Let&apos;s discuss your project and how I can help.
           </p>
         </div>
@@ -84,7 +84,7 @@ export default function Contact() {
             {/* First Name & Last Name */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-8">
               <div className="flex flex-col gap-2">
-                <label htmlFor="firstName" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
+                <label htmlFor="firstName" className="text-body font-medium text-base lg:text-lg">
                   First Name
                 </label>
                 <input
@@ -94,12 +94,12 @@ export default function Contact() {
                   value={formData.firstName}
                   onChange={handleChange}
                   required
-                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
+                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white"
                   placeholder="Enter your first name"
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <label htmlFor="lastName" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
+                <label htmlFor="lastName" className="text-body font-medium text-base lg:text-lg">
                   Last Name
                 </label>
                 <input
@@ -109,7 +109,7 @@ export default function Contact() {
                   value={formData.lastName}
                   onChange={handleChange}
                   required
-                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
+                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white"
                   placeholder="Enter your last name"
                 />
               </div>
@@ -118,7 +118,7 @@ export default function Contact() {
             {/* Email & Phone */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3 lg:gap-8">
               <div className="flex flex-col gap-2">
-                <label htmlFor="email" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
+                <label htmlFor="email" className="text-body font-medium text-base lg:text-lg">
                   Email
                 </label>
                 <input
@@ -128,12 +128,12 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
+                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white"
                   placeholder="Enter your email"
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <label htmlFor="phone" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
+                <label htmlFor="phone" className="text-body font-medium text-base lg:text-lg">
                   Phone Number
                 </label>
                 <input
@@ -142,7 +142,7 @@ export default function Contact() {
                   name="phone"
                   value={formData.phone}
                   onChange={handleChange}
-                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
+                  className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white"
                   placeholder="Enter your phone number"
                 />
               </div>
@@ -150,7 +150,7 @@ export default function Contact() {
 
             {/* Topic */}
             <div className="flex flex-col gap-2">
-              <label htmlFor="topic" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
+              <label htmlFor="topic" className="text-body font-medium text-base lg:text-lg">
                 Choose a topic
               </label>
               <div className="relative">
@@ -160,7 +160,7 @@ export default function Contact() {
                   value={formData.topic}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2.5 lg:px-6 lg:py-4 pr-10 lg:pr-12 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white dark:bg-bg-shade-dark dark:text-heading-dark appearance-none cursor-pointer"
+                  className="w-full px-4 py-2.5 lg:px-6 lg:py-4 pr-10 lg:pr-12 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg bg-white appearance-none cursor-pointer"
                 >
                   <option value="">Select one...</option>
                   <option value="backend-development">Backend Development</option>
@@ -170,7 +170,7 @@ export default function Contact() {
                   <option value="other">Other</option>
                 </select>
                 <div className="absolute right-4 lg:right-6 top-1/2 -translate-y-1/2 pointer-events-none">
-                  <svg className="w-4 h-4 lg:w-5 lg:h-5 text-body dark:text-heading-dark" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-4 h-4 lg:w-5 lg:h-5 text-body" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                   </svg>
                 </div>
@@ -179,7 +179,7 @@ export default function Contact() {
 
             {/* Message */}
             <div className="flex flex-col gap-2">
-              <label htmlFor="message" className="text-body dark:text-heading-dark font-medium text-base lg:text-lg">
+              <label htmlFor="message" className="text-body font-medium text-base lg:text-lg">
                 Message
               </label>
               <textarea
@@ -189,7 +189,7 @@ export default function Contact() {
                 onChange={handleChange}
                 required
                 rows={4}
-                className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 dark:border-gray-600 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg resize-none bg-white dark:bg-bg-shade-dark dark:text-heading-dark"
+                className="px-4 py-2.5 lg:px-6 lg:py-4 border border-gray-300 rounded-lg focus:outline-none focus:border-primary text-base lg:text-lg resize-none bg-white"
                 placeholder="Type your message..."
               />
             </div>
@@ -205,7 +205,7 @@ export default function Contact() {
                 required
                 className="mt-1 w-4 h-4 lg:w-5 lg:h-5 accent-primary border-gray-300 rounded focus:ring-primary cursor-pointer"
               />
-              <label htmlFor="terms" className="text-body dark:text-body-dark text-sm lg:text-base leading-relaxed cursor-pointer">
+              <label htmlFor="terms" className="text-body text-sm lg:text-base leading-relaxed cursor-pointer">
                 I accept the terms and conditions
               </label>
             </div>
@@ -219,7 +219,7 @@ export default function Contact() {
               >
                 {isSubmitting ? 'Sending...' : 'Submit'}
               </button>
-              
+
               {/* Success/Error Messages */}
               {submitStatus === 'success' && (
                 <div className="text-primary font-medium text-base lg:text-lg">
@@ -238,4 +238,3 @@ export default function Contact() {
     </section>
   )
 }
-

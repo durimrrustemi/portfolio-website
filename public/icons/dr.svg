@@ -3,18 +3,18 @@
     .dr-text { 
       font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
       font-weight: 500;
-      fill: #5E3BEE;
+      fill: #377860;
       letter-spacing: 0px;
       font-stretch: condensed;
     }
   </style>
   <!-- Mirrored D (flipped horizontally) -->
-  <g transform="translate(110,175) scale(-0.85,1)">
+  <g transform="translate(90,175) scale(-0.85,1)">
     <text x="0" y="0" font-size="280" text-anchor="middle" dominant-baseline="middle" class="dr-text">D</text>
   </g>
   <!-- R -->
   <g transform="scale(0.85,1)">
-    <text x="270" y="175" font-size="280" text-anchor="middle" dominant-baseline="middle" class="dr-text">R</text>
+    <text x="265" y="175" font-size="280" text-anchor="middle" dominant-baseline="middle" class="dr-text">R</text>
   </g>
 </svg>
 

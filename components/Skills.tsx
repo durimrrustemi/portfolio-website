@@ -63,12 +63,12 @@ export default function Skills() {
   ]
 
   return (
-    <section id="skills" className="py-5 lg:py-32 dark:bg-bg-shade-dark scroll-mt-header">
+    <section id="skills" className="py-5 lg:py-32 scroll-mt-header">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Section Title */}
         <div className="flex flex-col gap-3 lg:gap-5 mb-8 lg:mb-16">
-          <p className="text-heading dark:text-heading-dark font-semibold text-xl lg:text-2xl">My Skills</p>
-          <h2 className="text-heading dark:text-heading-dark font-bold text-4xl lg:text-6xl leading-tight">
+          <p className="text-heading font-semibold text-xl lg:text-2xl">My Skills</p>
+          <h2 className="text-heading font-bold text-4xl lg:text-6xl leading-tight">
             What I Do
           </h2>
         </div>
@@ -78,21 +78,21 @@ export default function Skills() {
           {skills.map((skill, index) => (
             <div
               key={index}
-              className="flex flex-col gap-4 lg:gap-8 p-5 lg:p-8 bg-bg-shade dark:bg-body border-b-4 border-primary rounded-xl hover:shadow-lg transition-shadow"
+              className="flex flex-col gap-4 lg:gap-8 p-5 lg:p-8 bg-bg-shade border-b-4 border-primary rounded-xl hover:shadow-lg transition-shadow"
             >
               <div className="flex items-center gap-4 md:flex-col md:items-start">
                 {/* Icon */}
-                <div className="w-14 h-14 lg:w-20 lg:h-20 bg-white dark:bg-bg-shade-dark rounded-xl shadow-md flex items-center justify-center">
+                <div className="w-14 h-14 lg:w-20 lg:h-20 bg-white rounded-xl shadow-md flex items-center justify-center">
                   {skill.icon}
                 </div>
                 {/* Title */}
-                <h3 className="text-heading dark:text-heading-dark font-bold text-2xl lg:text-3xl leading-tight">
+                <h3 className="text-heading font-bold text-2xl lg:text-3xl leading-tight">
                   {skill.title}
                 </h3>
               </div>
 
               {/* Description */}
-              <p className="text-body dark:text-body-dark text-lg lg:text-xl leading-relaxed">
+              <p className="text-body text-lg lg:text-xl leading-relaxed">
                 {skill.description}
               </p>
             </div>
@@ -102,4 +102,3 @@ export default function Skills() {
     </section>
   )
 }
-

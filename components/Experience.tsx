@@ -57,33 +57,33 @@ export default function Experience() {
   ]
 
   return (
-    <section id="experience" className="py-5 lg:py-32 bg-bg-shade dark:bg-bg-shade-dark scroll-mt-header">
+    <section id="experience" className="py-5 lg:py-32 bg-bg-shade scroll-mt-header">
       <div className="container mx-auto px-6 lg:px-20">
         {/* Professional Experience */}
         <div className="mb-12 lg:mb-32">
           <div className="flex flex-col gap-3 lg:gap-5 mb-8 lg:mb-16">
-            <p className="text-heading dark:text-heading-dark font-semibold text-xl lg:text-2xl">Career</p>
-            <h2 className="text-heading dark:text-heading-dark font-bold text-4xl lg:text-6xl leading-tight">
+            <p className="text-heading font-semibold text-xl lg:text-2xl">Career</p>
+            <h2 className="text-heading font-bold text-4xl lg:text-6xl leading-tight">
               Professional Experience
             </h2>
           </div>
 
           <div className="space-y-4 lg:space-y-10">
             {experiences.map((exp, index) => (
-              <div key={index} className="bg-white dark:bg-body p-5 lg:p-8 rounded-lg border-l-4 border-primary hover:shadow-lg transition-shadow">
+              <div key={index} className="bg-white p-5 lg:p-8 rounded-lg border-l-4 border-primary hover:shadow-lg transition-shadow">
                 <div className="flex flex-col gap-4">
                   <div>
-                    <h3 className="text-heading dark:text-heading-dark font-bold text-2xl lg:text-3xl mb-2">
+                    <h3 className="text-heading font-bold text-2xl lg:text-3xl mb-2">
                       {exp.title}
                     </h3>
                     <p className="text-primary font-semibold text-xl lg:text-2xl mb-1">
                       {exp.company}
                     </p>
-                    <p className="text-body/70 dark:text-body-dark/70 text-lg">{exp.period}</p>
+                    <p className="text-body/70 text-lg">{exp.period}</p>
                   </div>
                   <ul className="space-y-3 mt-2">
                     {exp.achievements.map((achievement, idx) => (
-                      <li key={idx} className="flex gap-3 text-body dark:text-body-dark text-lg leading-relaxed">
+                      <li key={idx} className="flex gap-3 text-body text-lg leading-relaxed">
                         <span className="text-primary flex-shrink-0 mt-0.5">•</span>
                         <span>{achievement}</span>
                       </li>
@@ -100,8 +100,8 @@ export default function Experience() {
           {/* Education */}
           <div>
             <div className="flex flex-col gap-3 lg:gap-5 mb-6 lg:mb-12">
-              <p className="text-heading dark:text-heading-dark font-semibold text-xl lg:text-2xl">Education</p>
-              <h2 className="text-heading dark:text-heading-dark font-bold text-3xl lg:text-5xl leading-tight">
+              <p className="text-heading font-semibold text-xl lg:text-2xl">Education</p>
+              <h2 className="text-heading font-bold text-3xl lg:text-5xl leading-tight">
                 Academic Background
               </h2>
             </div>
@@ -110,15 +110,15 @@ export default function Experience() {
               {education.map((edu, index) => (
                 <div
                   key={index}
-                  className="p-4 lg:p-6 bg-white dark:bg-body rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow"
+                  className="p-4 lg:p-6 bg-white rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow"
                 >
-                  <h3 className="text-heading dark:text-heading-dark font-bold text-xl lg:text-2xl mb-2">
+                  <h3 className="text-heading font-bold text-xl lg:text-2xl mb-2">
                     {edu.degree}
                     {edu.note && (
                       <span className="ml-2 text-primary text-lg">({edu.note})</span>
                     )}
                   </h3>
-                  <p className="text-body dark:text-body-dark text-lg">{edu.institution}</p>
+                  <p className="text-body text-lg">{edu.institution}</p>
                 </div>
               ))}
             </div>
@@ -127,8 +127,8 @@ export default function Experience() {
           {/* Languages */}
           <div>
             <div className="flex flex-col gap-3 lg:gap-5 mb-6 lg:mb-12">
-              <p className="text-heading dark:text-heading-dark font-semibold text-xl lg:text-2xl">Languages</p>
-              <h2 className="text-heading dark:text-heading-dark font-bold text-3xl lg:text-5xl leading-tight">
+              <p className="text-heading font-semibold text-xl lg:text-2xl">Languages</p>
+              <h2 className="text-heading font-bold text-3xl lg:text-5xl leading-tight">
                 Language Skills
               </h2>
             </div>
@@ -137,19 +137,19 @@ export default function Experience() {
               {languages.map((lang, index) => (
                 <div
                   key={index}
-                  className="p-4 lg:p-6 bg-white dark:bg-body rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow"
+                  className="p-4 lg:p-6 bg-white rounded-lg border-l-4 border-primary hover:shadow-md transition-shadow"
                 >
                   <div className="flex flex-wrap items-center gap-2 lg:flex-col lg:items-start">
-                    <h3 className="text-heading dark:text-heading-dark font-bold text-lg lg:text-2xl">
+                    <h3 className="text-heading font-bold text-lg lg:text-2xl">
                       {lang.language}
                     </h3>
                     {['German', 'English'].includes(lang.language) ? (
-                      <p className="text-body dark:text-body-dark text-base lg:text-lg">
+                      <p className="text-body text-base lg:text-lg">
                         <span className="lg:hidden">Fluent</span>
                         <span className="hidden lg:inline">{lang.proficiency}</span>
                       </p>
                     ) : (
-                      <p className="text-body dark:text-body-dark text-base lg:text-lg">{lang.proficiency}</p>
+                      <p className="text-body text-base lg:text-lg">{lang.proficiency}</p>
                     )}
                   </div>
                 </div>
@@ -161,4 +161,3 @@ export default function Experience() {
     </section>
   )
 }
-
